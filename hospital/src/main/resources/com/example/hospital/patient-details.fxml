@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="rootborderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospital.PatientDetailController">
+   <top>
+      <ImageView fitHeight="56.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@images/logo.png" />
+         </image>
+      </ImageView>
+   </top>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="131.0" fitWidth="174.0" layoutX="14.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/pa1.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="115.0" fitWidth="180.0" layoutX="13.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/pa2.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="124.0" fitWidth="180.0" layoutX="13.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/pa3.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="124.0" fitWidth="180.0" layoutX="13.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/p3.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="501.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="169.0" layoutY="34.0" prefHeight="71.0" prefWidth="282.0" text="Patient Personal Details" textFill="#1453d0">
+               <font>
+                  <Font name="Arial Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="90.0" layoutY="121.0" text="Patient Firstname" />
+            <TextField fx:id="firstText" layoutX="90.0" layoutY="138.0" prefHeight="25.0" prefWidth="186.0" promptText="Enter patient firstname" />
+            <Label layoutX="345.0" layoutY="121.0" text="Patient Lastname" />
+            <TextField fx:id="lastText" layoutX="339.0" layoutY="138.0" prefHeight="25.0" prefWidth="186.0" promptText="Enter patient lastname" />
+            <Label layoutX="90.0" layoutY="181.0" text="Patient Age" />
+            <TextField fx:id="ageText" layoutX="89.0" layoutY="198.0" prefHeight="25.0" prefWidth="186.0" promptText="Enter patient age( eg 20)" />
+            <TextField fx:id="genderText" layoutX="339.0" layoutY="198.0" prefHeight="25.0" prefWidth="186.0" promptText="Enter patient  gender( eg M or F)" />
+            <Label layoutX="345.0" layoutY="181.0" text="Patient Gender" />
+            <Label layoutX="90.0" layoutY="247.0" text="Patient Address" />
+            <TextField fx:id="addressText" layoutX="89.0" layoutY="264.0" prefHeight="25.0" prefWidth="436.0" promptText="Enter patient address( eg Tema)" />
+            <Button fx:id="submitButton" layoutX="402.0" layoutY="387.0" mnemonicParsing="false" onAction="#submitButtonOnAction" prefHeight="34.0" prefWidth="123.0" style="-fx-background-color: #51eb1d;" text="Submit &amp; Continue" textFill="#101110">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label fx:id="noticeLabel" layoutX="312.0" layoutY="361.0" prefHeight="17.0" prefWidth="213.0">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="rootborderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospital.ContactController">
+   <top>
+      <ImageView fitHeight="52.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@images/logo.png" />
+         </image>
+      </ImageView>
+   </top>
+   <right>
+      <AnchorPane prefHeight="548.0" prefWidth="271.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="50.0" layoutY="14.0" prefHeight="32.0" prefWidth="168.0" text="Contact Details" textFill="#5d64f2">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="67.0" prefHeight="17.0" prefWidth="106.0" text="Phone number" />
+            <TextField fx:id="numberText" layoutX="13.0" layoutY="84.0" prefHeight="25.0" prefWidth="242.0" promptText="Enter patient contact( eg 02400000)" />
+            <Label layoutX="9.0" layoutY="124.0" prefHeight="17.0" prefWidth="122.0" text="Phone number 2" />
+            <TextField fx:id="number2Text" layoutX="10.0" layoutY="141.0" prefHeight="25.0" prefWidth="245.0" promptText="Enter patient second phone number if any" />
+            <Label layoutX="14.0" layoutY="180.0" text="Email" />
+            <TextField fx:id="emailText" layoutX="13.0" layoutY="197.0" prefHeight="25.0" prefWidth="242.0" promptText="Enter patient email if any" />
+            <Button fx:id="submitutton" layoutX="103.0" layoutY="423.0" mnemonicParsing="false" onAction="#submitButtonOnAction" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #38fc10;" text="Submit &amp; Continue" textFill="#1e1e1e">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label fx:id="noticeLabel" layoutX="38.0" layoutY="396.0" prefHeight="17.0" prefWidth="201.0" />
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="-2.0" layoutY="-1.0" prefHeight="534.0" prefWidth="228.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <image>
+                        <Image url="@images/contact.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <image>
+                        <Image url="@images/contact1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <image>
+                        <Image url="@images/contact2.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="115.0" fitWidth="208.0" layoutX="14.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/contact3.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane layoutX="265.0" layoutY="14.0" prefHeight="488.0" prefWidth="253.0">
+               <children>
+                  <TextArea editable="false" layoutX="14.0" layoutY="38.0" prefHeight="448.0" prefWidth="232.0" promptText="For your medical team to effectively treat you during and after your hospital stay, an up-to-date health record (also called a medical record) should be maintained by hospital staff at all times. This information helps medical staff work out what treatment is most suitable, and they can use it to track how you are responding to the treatment. You may also need to fill out forms and provide other information at various times during your hospital stay.By law, all hospitals and healthcare providers must follow strict privacy guidelines when managing your health records." />
+                  <Label layoutX="9.0" layoutY="14.0" prefHeight="17.0" prefWidth="233.0" text="Why we record patient contact details">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

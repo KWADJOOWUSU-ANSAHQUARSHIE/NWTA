@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="rootborderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #fff9f9;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospital.HelloController">
+   <top>
+      <ImageView fitHeight="126.0" fitWidth="499.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@images/logo.png" />
+         </image>
+      </ImageView>
+   </top>
+   <right>
+      <Accordion prefHeight="457.0" prefWidth="202.0" BorderPane.alignment="CENTER">
+        <panes>
+          <TitledPane animated="false" text="Food health Tip" textFill="#a11d1d">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea editable="false" layoutY="117.0" prefHeight="257.0" prefWidth="200.0" promptText="The key to a healthy diet is to eat the right amount of calories for how active you are so you balance the energy you consume with the energy you use.If you eat or drink more than your body needs, you'll put on weight because the energy you do not use is stored as fat. If you eat and drink too little, you'll lose weight." wrapText="true" />
+                        <ImageView fitHeight="105.0" fitWidth="156.0" layoutX="31.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/food.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="Sex health tip" textFill="#bf1e1e">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea editable="false" layoutY="137.0" prefHeight="234.0" prefWidth="200.0" promptText="Having a fulfilling sex life can improve your overall well-being and even lower the risk of developing certain diseases. Yet, without knowing how to maintain your sexual health, you may not enjoy the pleasure and satisfaction that sex can bring. Read on to discover some sexual health facts and tips that can make sex a more enjoyable activity in your relationship." />
+                        <ImageView fitHeight="102.0" fitWidth="177.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/sex.jpg" />
+                           </image>
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </ImageView>
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="Pregnancy health tip" textFill="#b52020">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="99.0" fitWidth="162.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <image>
+                              <Image url="@images/preg.jpg" />
+                           </image>
+                        </ImageView>
+                        <TextArea editable="false" layoutX="1.0" layoutY="120.0" prefHeight="252.0" prefWidth="200.0" promptText="It’s important to take good care of your body during pregnancy. We recommend you avoid alcohol, limit your caffeine intake and steer clear of any nonprescription drugs throughout your pregnancy. Indulging in alcohol can adversely affect your baby’s brain or spinal development, too much caffeine has been linked to a higher instance of miscarriage, and nonprescription drugs can lead to birth defects or behavioral problems." />
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+            <TitledPane animated="false" layoutX="10.0" layoutY="60.0" text="Child-care health tip" textFill="#b52020">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="134.0" fitWidth="178.0" layoutX="11.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <image>
+                              <Image url="@images/child.jpg" />
+                           </image>
+                        </ImageView>
+                        <TextArea editable="false" layoutX="5.0" layoutY="108.0" prefHeight="237.0" prefWidth="193.0" promptText="Raising a family isn’t always easy. You are busy, and so are your children. But the stakes are high. Establishing a healthy lifestyle while they are young is important. A healthy, active lifestyle can help maintain a proper weight. It also can prevent health issues, such as diabetes, heart disease, asthma, and high blood pressure." />
+                     </children></AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane animated="false" layoutX="10.0" layoutY="85.0" text="First-aid health tip" textFill="#b52020">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="117.0" fitWidth="179.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/aid.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <TextArea editable="false" layoutX="8.0" layoutY="141.0" prefHeight="196.0" prefWidth="188.0" promptText="A well-stocked first aid kit is a must-have for treating minor injuries at home and on the go. You can buy a first aid kit or put one together on your own. Keep your supplies in a sturdy, clear plastic box so you can see what’s inside." />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+        </panes>
+      </Accordion>
+   </right>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="144.0" fitWidth="176.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/p2.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="171.0" layoutX="21.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/p4.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="126.0" fitWidth="169.0" layoutX="21.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/p3.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="51.0" layoutY="22.0" prefHeight="39.0" prefWidth="287.0" text="Patient Record keeping" textFill="#cd3636">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="105.0" layoutY="93.0" text="ID">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idText" layoutX="101.0" layoutY="110.0" prefHeight="25.0" prefWidth="208.0" promptText="Enter doctor/nurse ID" />
+            <Label layoutX="105.0" layoutY="166.0" text="Password">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Button fx:id="loginButton" layoutX="103.0" layoutY="237.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="204.0" style="-fx-background-color: #05eb0d;" text="Login" textFill="#101110">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="signupButton" layoutX="103.0" layoutY="284.0" mnemonicParsing="false" onAction="#signupButtonOnAction" prefHeight="25.0" prefWidth="204.0" style="-fx-background-color: #eb3717;" text="Dont have account, sign up" textFill="#0a0a0a">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label fx:id="noticeLabel" alignment="CENTER" layoutX="61.0" layoutY="360.0" prefHeight="17.0" prefWidth="281.0" />
+            <Button fx:id="forgotButton" layoutX="104.0" layoutY="324.0" mnemonicParsing="false" onAction="#forgotButtonOnAction" prefHeight="25.0" prefWidth="204.0" style="-fx-background-color: #3895e1;" text="Forgotten password?" textFill="#171717">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <PasswordField fx:id="passwordText" layoutX="104.0" layoutY="182.0" prefHeight="25.0" prefWidth="208.0" promptText="Enter password" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
