@@ -1,9 +1,9 @@
 # NWTA
 Computer Network Management (KTU) Java Project
 
+GROUP II [2]
 
-
-Name                                        Index
+Name                    &                    Index
 
 Richard Akomani                          04/2020/1474D
 
@@ -46,5 +46,3 @@ For more enquiries please
 WhatsApp: +233201182491
 
 Email: kushbastero@gmail.com
-
- 
